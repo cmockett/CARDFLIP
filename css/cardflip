@@ -1,0 +1,20 @@
+
+.front{
+	position:absolute;
+	transition-duration: 1s;
+	opacity:1;
+	-webkit-backface-visibility:hidden;
+}
+.back{
+	position:relative;
+	transition-duration: 1s;
+	opacity:1;
+	-webkit-backface-visibility:hidden;
+	transform: rotateY( 180deg );
+}
+.portfolio-item:hover .front{
+	transform: rotateY( 180deg );
+	}
+.portfolio-item:hover .back{
+	transform: rotateY(0deg);
+}
